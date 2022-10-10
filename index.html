@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+
+<body class="capitalize">
+    <header>
+        <h1 class="lg:text-5xl sm:text-3xl text-center  mt-4 "> functional <span
+                class="font-medium text-red text-red-600 ">Baper-Er-Bank!!!</span> </h1>
+    </header>
+    <main>
+        <section class="">
+            <div class="w-9/12 m-auto grid lg:grid-cols-3 gap-4 sm:mt-4  lg:mt-12 text-white">
+                <div class="bg-green-500 px-4 py-8 rounded text-center">
+                    <h3 class="text-2xl">deposit</h3>
+                    <h1 class="text-5xl">$<span id="deposit-amount">00</span></h1>
+                </div>
+                <div class="bg-red-500 px-4 py-8 rounded text-center">
+                    <h3 class="text-2xl">withdraw</h3>
+                    <h1 class="text-5xl">$<span id="withdraw-amount">00</span></h1>
+                </div>
+                <div class="bg-green-500 px-4 py-8 rounded text-center">
+                    <h3 class="text-2xl">balance</h3>
+                    <h1 class="text-5xl">$<span id="bank-total-amount">1240</span></h1>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- step-2 -->
+        <section>
+            <div class="w-9/12 m-auto grid lg:grid-cols-2 gap-4 mt-12 ">
+                <div class="bg-pink-500 px-4 py-8 rounded ">
+                    <h3 class="text-2xl text-white mb-3">you deposit</h3>
+                    <input id="deposit-fild" class="w-9/12" type="text">
+                    <div>
+                        <button id="deposit-btn" class="hover:bg-gray-700 bg-gray-600 text-white mt-3 px-12 py-2 rounded">
+                            Click
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-red-500 px-4 py-8 rounded ">
+                    <h3 class="text-2xl text-white mb-3">your withdraw</h3>
+                    <input id="withdraw-fild" class="w-9/12" type="text">
+                    <button id="withdraw-btn" class="hover:bg-gray-700 bg-gray-600 text-white mt-3 px-12 py-2 rounded">
+                        Click
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js-file/index.js"></script>
+</body>
+
+</html>
